@@ -216,6 +216,27 @@ server {
 		{{ if (eq $css "inverted") }}
 			sub_filter '</head>' '<link rel="stylesheet" type="text/css" href="/extra-css/inverted.css"/></head>';
 		{{ end }}
+		{{ if (eq $css "flink") }}
+			sub_filter '</head>' '<link rel="stylesheet" type="text/css" href="/extra-css/bde-flink.css"/><link rel="stylesheet" type="text/css" href="/extra-css/materialize.min.css"/></head>';
+		{{ end }}
+		{{ if (eq $css "hadoop") }}
+			sub_filter '</head>' '<link rel="stylesheet" type="text/css" href="/extra-css/bde-hadoop.css"/><link rel="stylesheet" type="text/css" href="/extra-css/materialize.min.css"/></head>';
+		{{ end }}
+		{{ if (eq $css "hdfs") }}
+			sub_filter '</head>' '<link rel="stylesheet" type="text/css" href="/extra-css/bde-hdfs.css"/><link rel="stylesheet" type="text/css" href="/extra-css/materialize.min.css"/></head>';
+		{{ end }}
+		{{ if (eq $css "sextant") }}
+			sub_filter '</head>' '<link rel="stylesheet" type="text/css" href="/extra-css/bde-sextant.css"/><link rel="stylesheet" type="text/css" href="/extra-css/materialize.min.css"/></head>';
+		{{ end }}
+		{{ if (eq $css "solr") }}
+			sub_filter '</head>' '<link rel="stylesheet" type="text/css" href="/extra-css/bde-solr.css"/><link rel="stylesheet" type="text/css" href="/extra-css/materialize.min.css"/></head>';
+		{{ end }}
+		{{ if (eq $css "spark-master") }}
+			sub_filter '</head>' '<link rel="stylesheet" type="text/css" href="/extra-css/bde-spark-master.css"/><link rel="stylesheet" type="text/css" href="/extra-css/materialize.min.css"/></head>';
+		{{ end }}
+		{{ if (eq $css "strabon") }}
+			sub_filter '</head>' '<link rel="stylesheet" type="text/css" href="/extra-css/bde-strabon.css"/><link rel="stylesheet" type="text/css" href="/extra-css/materialize.min.css"/></head>';
+		{{ end }}
 
 		proxy_pass {{ trim $proto }}://{{ trim $host }};
 		{{ if (exists (printf "/etc/nginx/htpasswd/%s" $host)) }}
