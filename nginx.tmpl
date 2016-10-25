@@ -223,6 +223,15 @@ server {
 		{{ if (eq $css "hadoop") }}
 			sub_filter '</head>' '<link rel="stylesheet" type="text/css" href="/extra-css/bde-hadoop.css"/><link rel="stylesheet" type="text/css" href="/extra-css/materialize.min.css"/></head>';
 		{{ end }}
+		{{ if (eq $css "hadoop-history-server") }}
+			sub_filter '</head>' '<link rel="stylesheet" type="text/css" href="/extra-css/bde-hadoop-history-server.css"/><link rel="stylesheet" type="text/css" href="/extra-css/materialize.min.css"/></head>';
+		{{ end }}
+		{{ if (eq $css "hadoop-node-manager") }}
+			sub_filter '</head>' '<link rel="stylesheet" type="text/css" href="/extra-css/bde-hadoop-node-manager.css"/><link rel="stylesheet" type="text/css" href="/extra-css/materialize.min.css"/></head>';
+		{{ end }}
+		{{ if (eq $css "hadoop-resource-manager") }}
+			sub_filter '</head>' '<link rel="stylesheet" type="text/css" href="/extra-css/bde-hadoop-resource-manager.css"/><link rel="stylesheet" type="text/css" href="/extra-css/materialize.min.css"/></head>';
+		{{ end }}
 		{{ if (eq $css "hdfs") }}
 			sub_filter '</head>' '<link rel="stylesheet" type="text/css" href="/extra-css/bde-hdfs.css"/><link rel="stylesheet" type="text/css" href="/extra-css/materialize.min.css"/></head>';
 		{{ end }}
