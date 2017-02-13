@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #F1F1F1;
+}
+
+input[type=text],
+input[type=password] {
+    height: auto !important;
+}
+
+#auth > span {
+    display: inline-block;
+}
+
+#header {
+    display: table;
+    width: 100%;
+    padding: 0 10%;
+    background: #A94F74;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+#header #auth {
+    display: table-cell;
+    float: none;
+    width: 50%;
+    padding-right: 15px;
+    text-align: right;
+    vertical-align: middle;
+}
+
+#auth .form-control {
+    height: 36px !important;
+    margin: 0 15px;
+    color: white;
+    border-bottom: 1px solid #EEE;
+}
+
+#auth .form-control::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+	color: #EEE;
+}
+
+#auth .form-control:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #EEE;
+    opacity:  1;
+}
+
+#auth .form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #EEE;
+    opacity:  1;
+}
+
+#auth .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #EEE;
+}
+
+#content {
+    width: 80%;
+    margin: 30px auto;
+    border-radius: 2px;
+    background: white;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+#content .yui-navset-top {
+    padding: 10px;
+}
+
+#content .navbar {
+    float: none;
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+#content .yui-navset-top .yui-content {
+    padding: 0;
+    margin-top: 10px;
+}
+
+.wrapper {
+    background: #F8F8F8;
+}
+
+.wrapper nav {
+    height: auto;
+    background: transparent;
+    box-shadow: none;
+}
+
+.wrapper .controlbar {
+    border: none;
+    border-left: 1px solid #DDDDDD;
+    border-right: 1px solid #DDDDDD;
+}
+
+#sparqlContent nav .tab-pane {
+    margin: 0;
+    padding: 0;
+    line-height: 1 !important;
+}
+
+#sparqlContent nav .tab-pane > div {
+    display: block !important;
+    float: none !important;
+    margin: 10px 0 !important;
+    line-height: 1 !important;
+    width: auto !important;
+}
+
+#sparqlContent nav .tab-pane > div > label {
+    min-width: 26ch;
+}
+
+#sparqlContent nav .tab-pane > div:nth-child(1) > div {
+    display: inline-block;
+    float: none !important;
+}
+
+#sparqlContent nav .tab-pane > div:nth-child(2) > .selectize-control {
+    display: inline-block;
+    vertical-align: middle;
+    float: none !important;
+}
+
+#sparqlContent nav .tab-pane > div:nth-child(3) > div {
+    margin: 0;
+}
+
+#sparqlContent nav .tab-pane > div:nth-child(3) > div input {
+    display: inline-block;
+    width: auto !important;
+    height: auto !important;
+    padding: 7px 12px !important;
+    margin: 0 10px 0 0 !important;
+}
+
+#sparqlContent nav .tab-pane > div:nth-child(4) > label {
+    margin: 0 !important;
+}
+
+#sparqlContent nav .tab-pane > div:nth-child(4) > div {
+    margin: 0;
+}
+
+#sparqlContent nav .tab-pane > div:nth-child(4) > div input {
+    display: inline-block;
+    width: auto !important;
+    height: auto !important;
+    padding: 7px 12px !important;
+    margin: 0 !important;
+}
+
+#sparqlContent nav .tab-pane > div:nth-child(5) > label {
+    margin: 0 !important;
+}
+
+#sparqlContent nav .tab-pane > div:nth-child(5) > div {
+    margin: 0 !important;
+}
+
+#sparqlContent nav .tab-pane > div:nth-child(5) > div input {
+    display: inline-block;
+    width: auto !important;
+    height: auto !important;
+    padding: 7px 12px !important;
+    margin: 0 !important;
+}

@@ -26,6 +26,7 @@ Configure the environment variable `CSS_SOURCE` on the service for which you wan
 - hadoop-resource-manager
 - hdfs
 - sextant
+- semagrow
 - solr
 - spark-master
 - strabon

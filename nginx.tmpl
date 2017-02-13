@@ -235,6 +235,9 @@ server {
 		{{ if (eq $css "hdfs") }}
 			sub_filter '</head>' '<link rel="stylesheet" type="text/css" href="/extra-css/bde-hdfs.css"/><link rel="stylesheet" type="text/css" href="/extra-css/materialize.min.css"/></head>';
 		{{ end }}
+		{{ if (eq $css "semagrow") }}
+			sub_filter '</head>' '<link rel="stylesheet" type="text/css" href="/extra-css/bde-semagrow.css"/><link rel="stylesheet" type="text/css" href="/extra-css/materialize.min.css"/></head>';
+		{{ end }}
 		{{ if (eq $css "sextant") }}
 			sub_filter '</head>' '<link rel="stylesheet" type="text/css" href="/extra-css/bde-sextant.css"/><link rel="stylesheet" type="text/css" href="/extra-css/materialize.min.css"/></head>';
 		{{ end }}
