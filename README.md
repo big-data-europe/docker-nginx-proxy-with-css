@@ -20,6 +20,7 @@ Provided your DNS is setup to forward `foo.bar.com` to a host running the `nginx
 #### Configure the CSS insertion
 Configure the environment variable `CSS_SOURCE` on the service for which you want to activate the automatic insertion of a (or many) CSS in the proxied HTML pages. The value of the `CSS_SOURCE` must be one of:
 - flink
+- flink-dashboard
 - hadoop
 - hadoop-history-server
 - hadoop-node-manager

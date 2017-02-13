@@ -220,6 +220,9 @@ server {
 		{{ if (eq $css "flink") }}
 			sub_filter '</head>' '<link rel="stylesheet" type="text/css" href="/extra-css/bde-flink.css"/><link rel="stylesheet" type="text/css" href="/extra-css/materialize.min.css"/></head>';
 		{{ end }}
+		{{ if (eq $css "flink-dashboard") }}
+			sub_filter '</head>' '<link rel="stylesheet" type="text/css" href="/extra-css/bde-flink-dashboard.css"/><link rel="stylesheet" type="text/css" href="/extra-css/materialize.min.css"/></head>';
+		{{ end }}
 		{{ if (eq $css "hadoop") }}
 			sub_filter '</head>' '<link rel="stylesheet" type="text/css" href="/extra-css/bde-hadoop.css"/><link rel="stylesheet" type="text/css" href="/extra-css/materialize.min.css"/></head>';
 		{{ end }}
