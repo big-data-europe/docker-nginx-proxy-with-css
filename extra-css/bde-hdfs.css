@@ -28,3 +28,85 @@ body {
     background: white;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);   
 }
+
+.login-content {
+    margin: 70px auto 0;
+}
+
+.input-prepend .add-on {
+    width: 10%;
+    height: 3rem;
+    margin-right: 5%;
+}
+
+.login-content .btn[type=submit] {
+    line-height: 1;
+}
+
+.login-content .btn[type=submit]:hover {
+    background-color: #338bb8;
+}
+
+#documentList {
+    margin-top: 20px;
+}
+
+a.btn {
+    line-height: 33px;
+}
+
+.btn, .btn-large {
+    background-image: none;
+}
+
+.btn:hover,
+.btn-large:hover {
+    color: #fff;
+}
+
+.btn-group.open .btn.dropdown-toggle {
+    background-color: #26a69a;
+}
+
+.modal.in:not(#submit-wf-modal) {
+    display: block !important;
+    position: fixed !important;
+    left: 50% !important;
+    right: auto !important;
+    width: 560px !important;
+    margin: auto auto auto -280px !important;
+    max-height: none !important;
+    padding: 35px 40px !important;
+}
+
+.modal .modal-footer {
+    background: white;
+}
+
+#createFileModal .btn[type=submit] {
+    margin-right: 10px;
+}
+
+#createDirectoryModal .btn[type=submit] {
+    margin-right: 10px;
+}
+
+#searchInput {
+    margin: 0 !important;
+}
+
+#addTagModal #tagsNewBtn {
+    margin-right: 10px;
+}
+
+#addTagModal .modal-body label {
+    width: 100%;
+}
+
+.navigator ~ .container-fluid > .row-fluid {
+    margin-top: 50px;
+}
+
+.navigator ~ .container-fluid > .row-fluid .span2 {
+    margin-top: 2rem;
+}
