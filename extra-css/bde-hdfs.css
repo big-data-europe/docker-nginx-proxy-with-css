@@ -110,3 +110,9 @@ a.btn {
 .navigator ~ .container-fluid > .row-fluid .span2 {
     margin-top: 2rem;
 }
+
+[type="checkbox"] {
+    position: relative !important;
+    visibility: visible !important;
+    left: auto !important;
+}
