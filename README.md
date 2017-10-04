@@ -4,7 +4,7 @@ The nginx-proxy-with-css sets up a container running nginx and [docker-gen][1]. 
 
 Start the `nginx-proxy-with-css`:
 
-    $ docker run -d -p 80:80 -v /var/run/docker.sock:/tmp/docker.sock:ro bde202/nginx-proxy-with-css
+    $ docker run -d -p 80:80 -v /var/run/docker.sock:/tmp/docker.sock:ro bde2020/nginx-proxy-with-css
 
 Start the containers you want to be proxied with the environment variable `VIRTUAL_HOST=subdomain.youdomain.com`
 
